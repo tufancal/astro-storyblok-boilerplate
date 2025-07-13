@@ -1,0 +1,16 @@
+---
+import { storyblokEditable } from "@storyblok/astro";
+import type { Link as LinkType } from "@/.storyblok/types/285719928053161/storyblok-components";
+
+interface Props {
+  blok: LinkType;
+}
+
+const { blok } = Astro.props;
+---
+
+<a
+  href={blok.url.url}
+  class="px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
+  >{blok.text}</a
+>

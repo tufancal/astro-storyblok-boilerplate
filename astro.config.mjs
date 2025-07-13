@@ -1,6 +1,7 @@
 import { storyblok } from "@storyblok/astro";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
+import path from "path";
 import { loadEnv } from "vite";
 import mkcert from "vite-plugin-mkcert";
 
@@ -20,5 +21,10 @@ export default defineConfig({
   ],
   vite: {
     plugins: [tailwindcss(), mkcert()],
+    resolve: {
+      alias: {
+        "@": path.resolve("./"),
+      },
+    },
   },
 });
