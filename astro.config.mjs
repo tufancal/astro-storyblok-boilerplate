@@ -12,7 +12,10 @@ export default defineConfig({
     storyblok({
       output: "static",
       accessToken: env.STORYBLOK_TOKEN,
-      components: {},
+      components: {
+        link: "components/atoms/Link",
+        page: "components/blocks/Page",
+      },
       apiOptions: {
         region: "eu",
       },
