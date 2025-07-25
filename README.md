@@ -24,6 +24,19 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
+## 🖥️ .env.sample
+
+```sh
+cp .env.sample .env
+```
+
+```text
+Add the STORYBLOK_TOKEN as well as the SPACE_ID which is needed to generate the types.
+
+STORYBLOK_TOKEN=
+STORYBLOK_SPACE_ID=
+```
+
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
 There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
